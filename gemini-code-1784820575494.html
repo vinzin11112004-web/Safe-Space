@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Generator Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="access-denied" class="modal hidden">
+        <div class="modal-content">
+            <h2>🔒 Access Denied</h2>
+            <p>You need a valid invitation link to access this AI video generator.</p>
+        </div>
+    </div>
+
+    <div id="app-container" class="container hidden">
+        <header>
+            <h1>AI Video Studio <span>HQ</span></h1>
+            <p>Generate high-quality AI videos securely.</p>
+        </header>
+
+        <main>
+            <div class="input-card">
+                <textarea id="prompt-input" rows="4" placeholder="Describe your video in detail..."></textarea>
+                <button id="generate-btn">
+                    <span id="btn-text">Generate Video</span>
+                    <div id="spinner" class="spinner hidden"></div>
+                </button>
+            </div>
+
+            <div class="output-card">
+                <div id="placeholder" class="placeholder">
+                    <p>Your generated video will appear here.</p>
+                </div>
+                <div id="video-container" class="hidden">
+                    <video id="video-player" controls autoplay loop></video>
+                    <a id="download-btn" class="download-btn" download="ai-video.mp4">Download Video</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
