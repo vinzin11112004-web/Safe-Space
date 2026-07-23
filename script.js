@@ -1,5 +1,5 @@
-// Replace this URL with your backend URL from Render in Step 3
-const BACKEND_URL = "safe-spacewin.vercel.app";
+// Replace this URL with your backend URL from Vercel
+const BACKEND_URL = "https://safe-spacewin.vercel.app";
 
 document.addEventListener('DOMContentLoaded', async () => {
     const urlParams = new URLSearchParams(window.location.search);
